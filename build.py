@@ -189,7 +189,7 @@ def build():
             # Save model checkpoint
             model.save(model_path, include_optimizer=True)
             cur_record = [history.history['loss'][0], history.history['accuracy'][0]]
-            train_history = pd.concat([train_history, pd.DataFrame(cur_record, columns=['loss', 'accuracy'])])
+            train_history = pd.concat([train_history, pd.DataFrame([cur_record], columns=['loss', 'accuracy'])])
             train_history.to_csv(train_history_path)
 
 

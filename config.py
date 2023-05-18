@@ -22,6 +22,6 @@ class Config:
 
         self.imgs_per_batch = 8
 
-        self.model_path = './model/model_0_68_loss.h5'
+        self.model_path = './model/model.h5'
 
         self.train_history_path = './model/history.csv'
